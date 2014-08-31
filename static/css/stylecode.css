@@ -1,0 +1,17 @@
+.home{
+	position: fixed;
+	top: 300px;
+	left: 250px;
+}
+#show_long{
+	position: fixed;
+	top: 30px;
+	left: 25px;
+	border: dashed;
+}
+#show_short{
+	position: fixed;
+	top: 70px;
+	left: 75px;
+	border: dashed;
+}

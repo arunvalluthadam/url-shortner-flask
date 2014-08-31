@@ -1,0 +1,36 @@
+url shorten working script
+-----------------------------------------------------------------
+get a long url from input tag.
+also skip upto domain name.  eg: http://www.youtube.com/
+skip special characters such as !@#$%^&.
+replace each letter with its corresponding numbers. 
+				eg: a = 1, b = 2 etc
+convert this numbers to base36 using javascript method .toString(36)
+javascript method generate a code.
+send it to flask using jquery and ajax.
+save that code and long url into sqlite3 database using flask.
+saving order in sqlite3 is - 
+				| id | long_url | "http://my_domain.ly" + dcode |.
+after save each long url and code show the code with domain name. 
+				eg: code = dr3ws, domain = http://my_domain.ly, shorten_url = http://my_domain.ly/dr3ws
+-----------------------------------------------------------------------
+the code(http://my_domain.ly/dr3ws) enter into address bar
+this code search into sqlite3 table and pull out the whole row
+seperate the long_url and run that long_url
+
+==================================================
+	Another Way
+==================================================
+
+take the id that save in to the table
+convert it to any code
+convert this numbers to base36 using javascript method .toString(36)
+	....
+
+___________________________________________
+
+split the long url using 'string.split("")'
+declare a variable with 'a' to 'z' alphabet
+check each and every letter in long url with variable 'a' to 'z' using for loop.
+if get that letter from variable 'a' to 'z' then bring its index number using .indexOf(). eg: if string.indexOf("U") -> Output -> 8.
+if complete this process then go to num_to_base62 function.
