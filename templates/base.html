@@ -8,17 +8,13 @@
 	
 </head>
 <body>
-    <div id="container" class="container-fluid">
-        <div id="body">
-    		{% block content %}{% endblock %}
-
-    		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.8.0.min.js') }}"></script>
-    		<script type="text/javascript" src="{{ url_for('static', filename='js/jsCode.js') }}"></script>
-            
-        </div>
-        <div id="footer">
-          
-        </div>
-    </div>
+	<img src="{{url_for('static', filename='img/wish_onam.jpg')}}">
+	<div class="container">
+		
+		{% block content %}{% endblock %}	
+		
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.8.0.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jsCode.js') }}"></script>
+	</div>
 </body>
 </html>
